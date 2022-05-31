@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.nav
+package com.material.demo.ui.nav
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.SmallTopAppBar
@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.wolfsoft.demo.ui.theme.margin_half
+import com.material.demo.ui.theme.margin_half
 
 @Composable
 fun DemoBottomNavigation(

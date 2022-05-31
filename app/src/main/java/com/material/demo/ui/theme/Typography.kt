@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.theme
+package com.material.demo.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.wolfsoft.demo.R
+import com.material.demo.R
 
 private val Montserrat = FontFamily(
     Font(R.font.montserrat_regular),

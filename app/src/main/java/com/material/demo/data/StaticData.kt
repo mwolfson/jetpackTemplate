@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.data
+package com.material.demo.data
 
 @Suppress("max-line-length")
 object StaticData {

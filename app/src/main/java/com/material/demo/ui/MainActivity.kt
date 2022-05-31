@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui
+package com.material.demo.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,11 +13,11 @@ import androidx.navigation.plusAssign
 import com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi
 import com.google.accompanist.navigation.material.ModalBottomSheetLayout
 import com.google.accompanist.navigation.material.rememberBottomSheetNavigator
-import com.wolfsoft.demo.ui.nav.AppScreens
-import com.wolfsoft.demo.ui.nav.DemoBottomNavigation
-import com.wolfsoft.demo.ui.nav.DemoTopAppBar
-import com.wolfsoft.demo.ui.nav.PresNavHost
-import com.wolfsoft.demo.ui.theme.ComposeTemplateTheme
+import com.material.demo.ui.nav.AppScreens
+import com.material.demo.ui.nav.DemoBottomNavigation
+import com.material.demo.ui.nav.DemoTopAppBar
+import com.material.demo.ui.nav.PresNavHost
+import com.material.demo.ui.theme.ComposeTemplateTheme
 
 @ExperimentalMaterialNavigationApi
 class MainActivity : ComponentActivity() {
