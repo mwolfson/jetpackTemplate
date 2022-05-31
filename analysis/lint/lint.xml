@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+
+    <issue id="UnusedResources" severity="informational">
+        <ignore regexp=".*/core/res/values/colors.xml" />
+    </issue>
+
+    <issue id="GradleCompatible" severity="informational" />
+
+    <issue id="RtlHardcoded" severity="error" />
+    <issue id="RtlSymmetry" severity="ignore" />
+
+    <issue id="AllowBackup" severity="ignore" />
+    <issue id="GoogleAppIndexingWarning" severity="ignore" />
+
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+
+    <!-- coroutines ignore is temp - https://github.com/Kotlin/kotlinx.coroutines/issues/2004 -->
+    <issue id="InvalidPackage">
+        <ignore regexp="okio-[\d\.]+.jar" />
+        <ignore regexp="retrofit-[\d\.]+.jar" />
+        <ignore path="**/kotlinx-coroutines-core-*.jar"/>
+    </issue>
+
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="RelativeOverlap" severity="ignore" />
+
+    <issue id="ParcelCreator" severity="ignore" />
+
+    <issue id="MissingConstraints" severity="ignore" />
+
+    <issue id="MissingDefaultResource">
+        <ignore path="**/res/drawable-sw600dp-mdpi/**.png" />
+        <ignore path="**/res/drawable-sw600dp-hdpi/**.png" />
+        <ignore path="**/res/drawable-sw600dp-xhdpi/**.png" />
+        <ignore path="**/res/drawable-sw600dp-xxhdpi/**.png" />
+        <ignore path="**/res/drawable-sw600dp-xxxhdpi/**.png" />
+    </issue>
+
+    <issue id="MissingLeanbackLauncher" severity="ignore" />
+    <issue id="MissingLeanbackSupport" severity="ignore" />
+    <issue id="ImpliedTouchscreenHardware" severity="ignore" />
+
+    <issue id="all">
+        <ignore path="**/sharedtesting/*" />
+    </issue>
+
+</lint>

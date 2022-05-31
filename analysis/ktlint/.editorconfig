@@ -1,0 +1,7 @@
+[*.{kt,kts}]
+insert_final_newline=false
+max_line_length=120
+disabled_rules=final-newline,no-wildcard-imports,experimental:annotation
+
+[**/test/**.kt]
+ktlint_ignore_back_ticked_identifier=true

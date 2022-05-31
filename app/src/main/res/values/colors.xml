@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_bliss_desat">#FFC59E27</color>
+    <color name="black">#FF000000</color>
+    <color name="white_desat">#FFf5f5f5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_800">#FF424242</color>
+    <color name="amer_blue">#FF003EA2</color>
+</resources>

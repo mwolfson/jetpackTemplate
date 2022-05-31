@@ -1,0 +1,10 @@
+#!/bin/sh
+# Pre-push hook to run detekt and lint before pushing to remote
+#
+# See README for installation instructions
+
+echo ">>> Running pre-push hooks..."
+
+ruby ./gradlew detekt ktlintReleaseCheck --daemon
+
+exit $?

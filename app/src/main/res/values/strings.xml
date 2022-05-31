@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">M3 Template</string>
+    <string name="nav_home">List</string>
+    <string name="nav_nava">NavA</string>
+    <string name="nav_detail">Detail</string>
+    <string name="launch">Launch</string>
+    <string name="enter_a_color">Enter a color:</string>
+</resources>
