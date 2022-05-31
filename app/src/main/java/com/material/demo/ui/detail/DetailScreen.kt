@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.detail
+package com.material.demo.ui.detail
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -20,11 +20,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import com.wolfsoft.demo.data.ColorItem
-import com.wolfsoft.demo.ui.theme.ComposeTemplateTheme
-import com.wolfsoft.demo.ui.theme.card_corner_radius_lg
-import com.wolfsoft.demo.ui.theme.margin_double
-import com.wolfsoft.demo.ui.theme.margin_standard
+import com.material.demo.data.ColorItem
+import com.material.demo.ui.theme.ComposeTemplateTheme
+import com.material.demo.ui.theme.card_corner_radius_lg
+import com.material.demo.ui.theme.margin_double
+import com.material.demo.ui.theme.margin_standard
 
 @Composable
 fun DetailBody(

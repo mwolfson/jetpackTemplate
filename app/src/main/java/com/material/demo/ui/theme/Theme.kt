@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.theme
+package com.material.demo.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

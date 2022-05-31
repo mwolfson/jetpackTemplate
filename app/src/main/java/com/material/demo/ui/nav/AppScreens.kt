@@ -1,11 +1,11 @@
-package com.wolfsoft.demo.ui.nav
+package com.material.demo.ui.nav
 
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Details
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.wolfsoft.demo.R
+import com.material.demo.R
 
 sealed class AppScreens(val route: String, @StringRes val resourceId: Int, val icon: ImageVector) {
     object HomeNav : AppScreens("list", R.string.nav_home, Icons.Outlined.ListAlt)

@@ -1,4 +1,4 @@
-package com.wolfsoft.demo
+package com.material.demo
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

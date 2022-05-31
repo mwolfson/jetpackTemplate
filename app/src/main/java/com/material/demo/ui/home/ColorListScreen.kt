@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.home
+package com.material.demo.ui.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -26,10 +26,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import coil.compose.rememberAsyncImagePainter
-import com.wolfsoft.demo.data.ColorItem
-import com.wolfsoft.demo.ui.theme.margin_half
-import com.wolfsoft.demo.ui.theme.margin_standard
-import com.wolfsoft.demo.ui.theme.touchpoint_lg
+import com.material.demo.data.ColorItem
+import com.material.demo.ui.theme.margin_half
+import com.material.demo.ui.theme.margin_standard
+import com.material.demo.ui.theme.touchpoint_lg
 
 /**
  * The Main Presidents List Screen

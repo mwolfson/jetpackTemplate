@@ -1,8 +1,8 @@
-package com.wolfsoft.demo.ui
+package com.material.demo.ui
 
 import androidx.lifecycle.ViewModel
-import com.wolfsoft.demo.data.ColorItem
-import com.wolfsoft.demo.data.StaticData
+import com.material.demo.data.ColorItem
+import com.material.demo.data.StaticData
 
 class MainViewModel : ViewModel() {
     var colorList = listOf<ColorItem>()

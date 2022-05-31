@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.nav
+package com.material.demo.ui.nav
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -10,12 +10,12 @@ import androidx.navigation.navArgument
 import androidx.navigation.navDeepLink
 import com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi
 import com.google.accompanist.navigation.material.bottomSheet
-import com.wolfsoft.demo.data.ColorItem
-import com.wolfsoft.demo.data.StaticData
-import com.wolfsoft.demo.ui.MainViewModel
-import com.wolfsoft.demo.ui.detail.DetailBody
-import com.wolfsoft.demo.ui.feata.FeatABody
-import com.wolfsoft.demo.ui.home.ColorListBody
+import com.material.demo.data.ColorItem
+import com.material.demo.data.StaticData
+import com.material.demo.ui.MainViewModel
+import com.material.demo.ui.detail.DetailBody
+import com.material.demo.ui.feata.FeatABody
+import com.material.demo.ui.home.ColorListBody
 
 @Suppress("LongMethod")
 @ExperimentalMaterialNavigationApi

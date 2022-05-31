@@ -1,4 +1,4 @@
-package com.wolfsoft.demo.ui.feata
+package com.material.demo.ui.feata
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -20,9 +20,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.stringResource
-import com.wolfsoft.demo.R
-import com.wolfsoft.demo.ui.theme.margin_half
-import com.wolfsoft.demo.ui.theme.margin_standard
+import com.material.demo.R
+
+import com.material.demo.ui.theme.margin_half
+import com.material.demo.ui.theme.margin_standard
 
 @Suppress("LongParameterList")
 @Composable

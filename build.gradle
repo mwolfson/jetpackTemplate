@@ -12,36 +12,20 @@ buildscript {
         // App dependencies
         appCompatVersion = '1.4.1'
         activityComposeVersion = '1.6.0-alpha03'
-        cameraxVersion = "1.0.2"
-        cameraxViewVersion = '1.0.0-alpha32'
         composeVersion = '1.2.0-beta02'
         composeNavigationVersion = '2.5.0-rc01'
         coreTestingVersion = '2.1.0'
-        coroutinesVersion = '1.4.21'
-        coroutinesTestVersion = '1.6.2'
-        dataStoreVersion = '1.0.0'
         espressoVersion = '3.4.0'
-        fragmentVersion = '1.4.0'
-        gradleVersion = '7.1.0-rc01'
+        gradleVersion = '7.2.1'
         junitVersion = '4.13.2'
         kotlinVersion = '1.6.21'
-        ktlint_version = "0.42.1"
-        ktlintVersion = '0.42.1'
         ktxVersion = '1.7.0'
-        lifecycleVersion = '2.3.0'
         materialVersion = '1.7.0-alpha02'
         material3Version = '1.0.0-alpha12'
-        pagerVersion = '0.20.3'
-        roomVersion = '2.2.6'
-        retrofit = '2.9.0'
-        retrofit_logging = '5.0.0-alpha.3'
         runnerVersion = '1.0.1'
         truthVersion = '1.0.1'
         testExtJunit = '1.1.2'
-        sqlDelightVersion = '1.5.3'
         uiAutomatorVersion = '2.2.0'
-        viewPagerVersion = '1.0.0'
-        workVersion = '2.5.0'
     }
 
     repositories {
@@ -52,7 +36,6 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$gradleVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-        classpath "com.squareup.sqldelight:gradle-plugin:$sqlDelightVersion"
     }
 }
 
