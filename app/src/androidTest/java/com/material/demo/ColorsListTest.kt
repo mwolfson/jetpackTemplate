@@ -1,46 +1,59 @@
 package com.material.demo
 
 import android.content.res.Resources
-import android.util.Log
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.semantics.SemanticsConfiguration
-import androidx.compose.ui.test.*
+import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.junit4.createComposeRule
+import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi
+import com.material.demo.data.ColorItem
+import com.material.demo.data.StaticData
+import com.material.demo.ui.MainActivity
+import com.material.demo.ui.home.ColorListBody
 import com.material.demo.ui.theme.ComposeTemplateTheme
-import junit.framework.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
+@OptIn(ExperimentalMaterialNavigationApi::class)
 @RunWith(AndroidJUnit4::class)
 class ColorsListTest {
 
     @get:Rule
-    val composeTestRule = createComposeRule()
+    val composeTestRule = createAndroidComposeRule<MainActivity>()
 
     lateinit var res: Resources
     var isComplete = false
+    var colorList = listOf<ColorItem>()
 
     @Before
     fun setup() {
         res = InstrumentationRegistry.getInstrumentation().targetContext.resources
         isComplete = false
+        colorList = StaticData.COLOR_MAP.values.toList()
     }
 
-//    @Test
-//    fun NameTextField_ValidInput_CompleteStatusAndLabelCorrect() {
-//        val input = "RandomName123"
-//        composeTestRule.setContent {
-//            ComposeTemplateTheme {
+    @Test
+    fun LazyListContentsVerify() {
+        composeTestRule.setContent {
+            ComposeTemplateTheme {
+                ColorListBody(onItemClicked = {}, colorItems = colorList)
+            }
+        }
+        composeTestRule.onNodeWithText("Amber").performClick()
+        composeTestRule.onNodeWithText("Amber").assertIsDisplayed()
+    }
+}
 //                NameTextInput(
 //                    name = input,
 //                    onNameInfoValid = { isComplete = it }
 //                )
 //            }
-//        }
+//        }}
 //        val root = composeTestRule.onNodeWithTag(res.getString(R.string.testtag_name))
 //        val semanticsConfig = root.fetchSemanticsNode().config
 //        // Prints all Semantics to log
@@ -694,4 +707,4 @@ class ColorsListTest {
 //            }
 //        }
 //    }
-}
+//}

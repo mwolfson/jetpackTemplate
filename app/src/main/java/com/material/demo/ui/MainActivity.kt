@@ -16,7 +16,7 @@ import com.google.accompanist.navigation.material.rememberBottomSheetNavigator
 import com.material.demo.ui.nav.AppScreens
 import com.material.demo.ui.nav.DemoBottomNavigation
 import com.material.demo.ui.nav.DemoTopAppBar
-import com.material.demo.ui.nav.PresNavHost
+import com.material.demo.ui.nav.DemoNavHost
 import com.material.demo.ui.theme.ComposeTemplateTheme
 
 @ExperimentalMaterialNavigationApi
@@ -55,7 +55,7 @@ fun PresApp(demoViewModel: MainViewModel) {
                     DemoTopAppBar(navController = navController)
                 }
             ) { innerPadding ->
-                PresNavHost(
+                DemoNavHost(
                     navController = navController,
                     demoViewModel,
                     modifier = Modifier.padding(innerPadding)

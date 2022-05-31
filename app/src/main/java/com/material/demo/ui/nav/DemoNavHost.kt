@@ -20,7 +20,7 @@ import com.material.demo.ui.home.ColorListBody
 @Suppress("LongMethod")
 @ExperimentalMaterialNavigationApi
 @Composable
-fun PresNavHost(
+fun DemoNavHost(
     navController: NavHostController,
     viewModel: MainViewModel,
     modifier: Modifier = Modifier,
