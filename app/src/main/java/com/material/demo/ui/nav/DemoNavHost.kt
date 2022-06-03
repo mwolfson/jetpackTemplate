@@ -17,7 +17,6 @@ import com.material.demo.ui.detail.DetailBody
 import com.material.demo.ui.feata.FeatABody
 import com.material.demo.ui.home.ColorListBody
 
-@Suppress("LongMethod")
 @ExperimentalMaterialNavigationApi
 @Composable
 fun DemoNavHost(

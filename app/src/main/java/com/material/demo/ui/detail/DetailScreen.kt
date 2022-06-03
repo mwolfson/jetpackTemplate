@@ -1,12 +1,7 @@
 package com.material.demo.ui.detail
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.DragHandle
@@ -18,8 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import com.material.demo.R
 import com.material.demo.data.ColorItem
 import com.material.demo.ui.theme.ComposeTemplateTheme
 import com.material.demo.ui.theme.card_corner_radius_lg
@@ -37,14 +34,16 @@ fun DetailBody(
         ) {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.fillMaxWidth().padding(start = margin_double, end = margin_double)
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = margin_double, end = margin_double)
             ) {
                 Icon(
                     Icons.Outlined.DragHandle,
                     contentDescription = "Drag Sheet",
                 )
                 Text(
-                    text = "Detail Screen",
+                    text = stringResource(R.string.detail_screen),
                     style = MaterialTheme.typography.displayLarge,
                     modifier = Modifier.padding(top = margin_standard, bottom = margin_double)
                 )

@@ -62,6 +62,7 @@ private val DarkThemeColors = darkColorScheme(
     inverseOnSurface = md_theme_dark_inverseOnSurface,
     inverseSurface = md_theme_dark_inverseSurface,
 )
+
 @Composable
 fun ComposeTemplateTheme(
     useDarkTheme: Boolean = isSystemInDarkTheme(),

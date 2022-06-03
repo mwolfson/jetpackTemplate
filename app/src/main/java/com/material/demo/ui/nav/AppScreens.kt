@@ -3,7 +3,8 @@ package com.material.demo.ui.nav
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Details
-import androidx.compose.material.icons.outlined.*
+import androidx.compose.material.icons.outlined.Bookmarks
+import androidx.compose.material.icons.outlined.ListAlt
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.material.demo.R
 
