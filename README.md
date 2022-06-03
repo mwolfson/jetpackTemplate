@@ -54,9 +54,9 @@ This repo has [configuration](buildscripts/githooks.gradle) to automatically set
 
 I'm using the [Coil](https://coil-kt.github.io/coil/) image caching library to make the demo a bit nicer.
 
-#### Configuration Stuff
+#### Android Studio Configuration
 
-There are a few Android Studio integrationsin the project worth calling out:
+There are a few Android Studio integrations in the project worth calling out:
 
 * [code style](.idea/codeStyles/Project.xml) - establishes consistent formatting
 * [code insight settings](.idea/codeInsightSettings.xml) - [eliminates certain values](https://www.jetpackcompose.app/articles/productivity-hack-to-save-tens-of-engineering-hours-when-working-with-Jetpack-Compose) from showing up in auto-complete, making dev life happier 
@@ -64,7 +64,7 @@ There are a few Android Studio integrationsin the project worth calling out:
 
 ## Demo
 
-![demoGif](assets/demoGif.gif)
+<img src="assets/demoGif.gif" width="300" height="650">
 
 ## How to Use
 
