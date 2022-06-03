@@ -36,7 +36,7 @@ The [Color.kt](com/wolfsoft/demo/ui/theme/Color.kt) file is formatted so you can
 
 It also includes color definitions for all the original M2 colors.
 
-![colors](assets/colors.png)
+<img src="assets/colors.png" width="494" height="374">
 
 #### Static Analysis
 
