@@ -19,6 +19,11 @@ Project includes:
   * LazyList
   * Input/Button
 * Material Icons
+* Compose Tests
+  * Simple starting test, not full coverage
+* Project configuration
+  * Static analysis
+  * Android Studio Integrations
   
 It *does not* include:
 * Architecture guidance
@@ -34,11 +39,11 @@ The [Color.kt](com/wolfsoft/demo/ui/theme/Color.kt) file is formatted so you can
 
 It also includes color definitions for all the original M2 colors.
 
-![colors](assets/colors.png)
+<img src="assets/colors.png" width="494" height="374">
 
 #### Static Analysis
 
-I included static analysis tooling in the build for this project. I like to use these tools to maintain consistency, so include them in all my projects.
+I included static analysis tooling in the build for this project. These tools help maintain consistency and are worth including in all projects.
 
 To run static analysis on this project, execute:
 
@@ -46,13 +51,23 @@ To run static analysis on this project, execute:
 ./gradlew lint ktlintcheck detekt
 ```
 
+This repo has [configuration](buildscripts/githooks.gradle) to automatically setup a pre-commit hook requiring the developer to pass static analysis before being able to commit PRs.
+
 #### Remote Image Caching (Coil)
 
 I'm using the [Coil](https://coil-kt.github.io/coil/) image caching library to make the demo a bit nicer.
 
+#### Android Studio Configuration
+
+There are a few Android Studio integrations in the project worth calling out:
+
+* [code style](.idea/codeStyles/Project.xml) - establishes consistent formatting
+* [code insight settings](.idea/codeInsightSettings.xml) - [eliminates certain values](https://www.jetpackcompose.app/articles/productivity-hack-to-save-tens-of-engineering-hours-when-working-with-Jetpack-Compose) from showing up in auto-complete, making dev life happier 
+* [plugin dependency list](.idea/externalDependencies.xml) - list of essential plugins
+
 ## Demo
 
-![demoGif](assets/demoGif.gif)
+<img src="assets/demoGif.gif" width="300" height="650">
 
 ## How to Use
 
@@ -60,8 +75,13 @@ I'm using the [Coil](https://coil-kt.github.io/coil/) image caching library to m
 
 ## Near Future Plans
 
-* Jetpack Compose Tests
+* More Compose Tests - just enough to get started in different areas of testing.
 * Repository
+
+## Contributors
+
+Special thanks for the great input from:
+* [Atom Raiff](https://github.com/atommarvel)
 
 ## Comments Welcome
 Please contact me if you have any comments or suggestions.

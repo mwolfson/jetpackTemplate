@@ -2,14 +2,7 @@ package com.material.demo.ui.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -32,7 +25,7 @@ import com.material.demo.ui.theme.margin_standard
 import com.material.demo.ui.theme.touchpoint_lg
 
 /**
- * The Main Presidents List Screen
+ * The Main List Screen
  */
 @Composable
 fun ColorListBody(
@@ -40,8 +33,8 @@ fun ColorListBody(
     colorItems: List<ColorItem>?,
 ) {
     if (!colorItems.isNullOrEmpty()) {
-        var userItems = remember { mutableStateListOf<ColorItem>() }
-        userItems.swapList(sortDate(false, colorItems))
+        val userItems = remember { mutableStateListOf<ColorItem>() }
+        userItems.swapList(sortName(false, colorItems))
 
         Surface(color = MaterialTheme.colorScheme.background) {
             Column {
@@ -62,7 +55,10 @@ fun ColorListBody(
     }
 }
 
-fun sortDate(descending: Boolean, listIn: List<ColorItem>): List<ColorItem> {
+/**
+ * Simple sorting method to return a list sorted by name for display
+ */
+fun sortName(descending: Boolean, listIn: List<ColorItem>): List<ColorItem> {
     return if (descending) {
         listIn.sortedByDescending { it.name }
     } else {

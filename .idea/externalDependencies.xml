@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalDependencies">
+    <plugin id="String Manipulation" />
+    <plugin id="com.developerphil.adbidea" />
+    <plugin id="izhangzhihao.rainbow.brackets" />
+    <plugin id="wu.seal.tool.jsontokotlin" />
+  </component>
+</project>

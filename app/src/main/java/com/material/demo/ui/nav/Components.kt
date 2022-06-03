@@ -1,12 +1,7 @@
 package com.material.demo.ui.nav
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.SmallTopAppBar
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.NavigationBar
-import androidx.compose.material3.NavigationBarItem
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -54,20 +49,24 @@ fun DemoTopAppBar(navController: NavHostController) {
     val route = navBackStackEntry?.destination?.route
     SmallTopAppBar(
         navigationIcon = {
-            val iconToSet =
-                when (route) {
-                    "list" -> AppScreens.HomeNav.icon
-                    "nava" -> AppScreens.NavA.icon
-                    else -> AppScreens.Detail.icon
-                }
-            Icon(
-                imageVector = iconToSet,
-                contentDescription = null,
-                modifier = Modifier.padding(horizontal = margin_half)
-            )
+            if (route.equals("list") || route.equals("nava")) {
+                val iconToSet =
+                    when (route) {
+                        "list" -> AppScreens.HomeNav.icon
+                        "nava" -> AppScreens.NavA.icon
+                        else -> AppScreens.Detail.icon
+                    }
+                Icon(
+                    imageVector = iconToSet,
+                    contentDescription = null,
+                    modifier = Modifier.padding(horizontal = margin_half)
+                )
+            }
         },
         title = {
-            Text(route.orEmpty().uppercase())
+            if (route.equals("list") || route.equals("nava")) {
+                Text(route.orEmpty().uppercase())
+            }
         },
 
         // Material design suggests avoiding large areas of bright colors in dark theme. A common
