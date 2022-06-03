@@ -51,6 +51,8 @@ To run static analysis on this project, execute:
 ./gradlew lint ktlintcheck detekt
 ```
 
+The [Spotless Gradle](https://github.com/diffplug/spotless/tree/main/plugin-gradle) plugin is also included for formatting and code cleanup.
+
 This repo has [configuration](buildscripts/githooks.gradle) to automatically setup a pre-commit hook requiring the developer to pass static analysis before being able to commit PRs.
 
 #### Remote Image Caching (Coil)
