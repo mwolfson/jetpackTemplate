@@ -21,6 +21,9 @@ Project includes:
 * Material Icons
 * Compose Tests
   * Simple starting test, not full coverage
+* Project configuration
+  * Static analysis
+  * Android Studio Integrations
   
 It *does not* include:
 * Architecture guidance
