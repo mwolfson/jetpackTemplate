@@ -12,7 +12,7 @@ buildscript {
         // App dependencies
         appCompatVersion = '1.4.1'
         activityComposeVersion = '1.6.0-alpha03'
-        composeVersion = '1.2.0-beta02'
+        composeVersion = '1.2.0-beta03'
         composeNavigationVersion = '2.5.0-rc01'
         coreTestingVersion = '2.1.0'
         espressoVersion = '3.4.0'
