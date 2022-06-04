@@ -63,7 +63,6 @@ subprojects {
             targetExclude('bin/**/*.kt')
 
             ktlint(rootProject.ktlint)
-            licenseHeaderFile  '/* (C)$YEAR */'
         }
     }
 
