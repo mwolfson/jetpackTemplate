@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-    <component name="JavaProjectCodeInsightSettings">
-        <excluded-names>
-            <name>android.app.LauncherActivity.ListItem</name>
-            <name>android.graphics.drawable.Icon</name>
-            <name>android.graphics.fonts.FontFamily</name>
-            <name>android.inputmethodservice.Keyboard.Row</name>
-            <name>android.text.layout.Alignment</name>
-            <name>android.widget.GridLayout.Alignment</name>
-            <name>android.view.RoundedCorner</name>
-            <name>android.view.Surface</name>
-            <name>java.lang.reflect.Modifier</name>
-            <name>java.nio.file.WatchEvent.Modifier</name>
-            <name>java.time.format.TextStyle</name>
-            <name>org.w3c.dom.Text</name>
-
-            <!-- Make sure only material3 imports show up -->
-            <name>androidx.compose.material.*</name>
-
-            <!-- Optional: Hide Canvas API - if we are just using Compose -->
-            <name>android.graphics.Canvas</name>
-        </excluded-names>
-    </component>
+  <component name="JavaProjectCodeInsightSettings">
+    <excluded-names>
+      <name>android.app.LauncherActivity.ListItem</name>
+      <name>android.graphics.Canvas</name>
+      <name>android.graphics.drawable.Icon</name>
+      <name>android.graphics.fonts.FontFamily</name>
+      <name>android.inputmethodservice.Keyboard.Row</name>
+      <name>android.text.layout.Alignment</name>
+      <name>android.view.RoundedCorner</name>
+      <name>android.view.Surface</name>
+      <name>android.widget.GridLayout.Alignment</name>
+      <name>androidx.compose.material.*</name>
+      <name>java.lang.reflect.Modifier</name>
+      <name>java.nio.file.WatchEvent.Modifier</name>
+      <name>java.time.format.TextStyle</name>
+      <name>org.w3c.dom.Text</name>
+    </excluded-names>
+  </component>
 </project>

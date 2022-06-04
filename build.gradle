@@ -12,7 +12,7 @@ buildscript {
         // App dependencies
         appCompatVersion = '1.4.1'
         activityComposeVersion = '1.6.0-alpha03'
-        composeVersion = '1.2.0-beta02'
+        composeVersion = '1.2.0-beta03'
         composeNavigationVersion = '2.5.0-rc01'
         coreTestingVersion = '2.1.0'
         espressoVersion = '3.4.0'
@@ -40,7 +40,6 @@ buildscript {
 }
 
 plugins {
-    id 'com.diffplug.spotless' version '5.10.0'
     id "com.github.ben-manes.versions" version "0.36.0"
     id "io.gitlab.arturbosch.detekt" version "1.18.1"
     id "org.jlleitschuh.gradle.ktlint" version "10.2.1"
@@ -54,18 +53,6 @@ subprojects {
 
     apply from: "../buildscripts/ktlint.gradle"
     apply from: "../buildscripts/detekt.gradle"
-
-    apply plugin: 'com.diffplug.spotless'
-    spotless {
-        kotlin {
-            target '**/*.kt'
-            targetExclude("$buildDir/**/*.kt")
-            targetExclude('bin/**/*.kt')
-
-            ktlint(rootProject.ktlint)
-            licenseHeaderFile rootProject.file('spotless/copyright.kt')
-        }
-    }
 
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
         kotlinOptions {

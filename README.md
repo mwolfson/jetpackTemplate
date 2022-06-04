@@ -18,6 +18,7 @@ Project includes:
 * Jetpack Compose screens
   * LazyList
   * Input/Button
+  * BottomSheet
 * Material Icons
 * Compose Tests
   * Simple starting test, not full coverage
@@ -64,6 +65,15 @@ There are a few Android Studio integrations in the project worth calling out:
 * [code style](.idea/codeStyles/Project.xml) - establishes consistent formatting
 * [code insight settings](.idea/codeInsightSettings.xml) - [eliminates certain values](https://www.jetpackcompose.app/articles/productivity-hack-to-save-tens-of-engineering-hours-when-working-with-Jetpack-Compose) from showing up in auto-complete, making dev life happier 
 * [plugin dependency list](.idea/externalDependencies.xml) - list of essential plugins
+
+#### Continuous Integration(CI) - Using Github Actions
+
+The [initial configuration](.github/workflows/android.yml) is included for building on Github Actions. The build compiles the APKs, if static analysis completes without issue.
+
+To disable CI - delete the configuration file.
+
+Build status is:
+![Jetpack Template Build](https://github.com/mwolfson/jetpackTemplate/actions/workflows/android.yml/badge.svg)
 
 ## Demo
 
