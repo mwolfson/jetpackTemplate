@@ -1,3 +1,0 @@
-/*
- * Copyright $YEAR AbleAndroid LLC
- */
