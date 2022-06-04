@@ -1,6 +1,3 @@
-/*
- * Copyright 2022 AbleAndroid LLC
- */
 package com.material.demo.ui.nav
 
 import androidx.compose.runtime.Composable
