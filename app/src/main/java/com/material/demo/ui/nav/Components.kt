@@ -54,11 +54,11 @@ fun DemoTopAppBar(navController: NavHostController) {
     val route = navBackStackEntry?.destination?.route
     SmallTopAppBar(
         navigationIcon = {
-            if (route.equals("list") || route.equals("nava")) {
+            if (route.equals("list") || route.equals("feata")) {
                 val iconToSet =
                     when (route) {
                         "list" -> AppScreens.HomeNav.icon
-                        "nava" -> AppScreens.NavA.icon
+                        "feata" -> AppScreens.NavA.icon
                         else -> AppScreens.Detail.icon
                     }
                 Icon(
@@ -69,7 +69,7 @@ fun DemoTopAppBar(navController: NavHostController) {
             }
         },
         title = {
-            if (route.equals("list") || route.equals("nava")) {
+            if (route.equals("list") || route.equals("feata")) {
                 Text(route.orEmpty().uppercase())
             }
         },

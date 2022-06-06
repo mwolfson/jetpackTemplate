@@ -26,10 +26,10 @@ fun DemoNavHost(
 ) {
     NavHost(
         navController = navController,
-        startDestination = AppScreens.HomeNav.route,
+        startDestination = NavigationDirections.home.destination,
         modifier = modifier
     ) {
-        composable(route = AppScreens.HomeNav.route) {
+        composable(route = NavigationDirections.home.destination) {
             ColorListBody(
                 onItemClicked = {
                     navController.navigate("${AppScreens.Detail.route}${it.name}")
@@ -37,7 +37,7 @@ fun DemoNavHost(
                 viewModel.colorList,
             )
         }
-        composable(route = AppScreens.NavA.route) {
+        composable(route = NavigationDirections.feata.destination) {
             FeatABody(
                 onLaunchClicked = {
                     navController.navigate("${AppScreens.Detail.route}$it")
@@ -46,7 +46,7 @@ fun DemoNavHost(
         }
         //  adb shell am start -a android.intent.action.VIEW -d "http://www.m3demo.com/details/red"
         bottomSheet(
-            route = "${AppScreens.Detail.route}{name}",
+            route = "${NavigationDirections.detail.destination}{name}",
             arguments = listOf(
                 navArgument("name") {
                     type = NavType.StringType
