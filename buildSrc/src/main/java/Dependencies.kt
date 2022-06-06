@@ -55,7 +55,7 @@ object Versions {
     const val kermit = "1.0.3"
 
     const val gradleVersionsPlugin = "0.39.0"
-    const val gradleVersion = "7.2.1"
+    const val gradleVersion = "7.3.3"
 }
 
 object Deps {
